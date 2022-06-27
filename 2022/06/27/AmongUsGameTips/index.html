@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); </script>
+    
+    
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Regular.woff2" as="font">
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Bold.woff2" as="font">
+    
+    
+    
+        <link rel="shortcut icon" href="/icons/favicon.ico">
+    
+
+    
+    
+        
+<link rel="stylesheet" href="/css/mdui.min.v1.0.0.css">
+
+    
+    
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/iconfont.css">
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+    
+    
+    <title>
+        
+            太空狼人杀攻略 版本v1.0 | 一个小鸽子的小站
+        
+    </title>
+    
+    
+<meta name="generator" content="Hexo 6.2.0"></head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-blue">
+  
+  <header class="mdui-appbar mdui-appbar-fixed">
+  <div id="toolbar" class="mdui-toolbar mdui-color-theme">
+    <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#sidebar', swipe: true}"><i class="iconfont icon-menu"></i></button>
+    <a href="/" class="mdui-typo-headline">一个小鸽子的小站</a>
+    <a href="/" class="header-subtitle mdui-typo-headline"></a>
+    <div class="mdui-toolbar-spacer"></div>
+    <button class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#search'}" mdui-tooltip="{content: 'search'}"><i class="iconfont icon-search"></i></button>
+  </div>
+</header>
+
+<div class="mdui-dialog" id="search">
+  
+    <div class="search-form">
+      <input type="search" class="search-form-input" placeholder="请输入关键字" onfocus="listenSearchFunc()">
+    </div>
+    <div class="search-result" data-resource="/search.xml"></div>
+  
+</div>
+
+  <aside id="sidebar" class="mdui-drawer">
+    <div class="mdui-tab" mdui-tab>
+        <a href="#sidebar-tab1" id="sidebartab" class="mdui-ripple mdui-tab-active">站点概览</a>
+        <a href="#sidebar-tab2" id="sidebartab" class="mdui-ripple">关于</a>
+    </div>
+
+    
+    <div id="sidebar-tab1" class="mdui-p-a-1">
+        <div class="mdui-list">
+            
+                
+                <a href="/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-home"></i>
+                    </div>
+                    <div class="mdui-list-item-content">主页</div>
+                </a>
+            
+                
+                <a href="/tags/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-bookmark"></i>
+                    </div>
+                    <div class="mdui-list-item-content">标签</div>
+                </a>
+            
+                
+                <a href="/categories/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-folder"></i>
+                    </div>
+                    <div class="mdui-list-item-content">分类</div>
+                </a>
+            
+                
+                <a href="/archives/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-archive"></i>
+                    </div>
+                    <div class="mdui-list-item-content">归档</div>
+                </a>
+            
+                
+                <a href="/about/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-user"></i>
+                    </div>
+                    <div class="mdui-list-item-content">关于</div>
+                </a>
+            
+            <div class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-icon">
+                    <i class="iconfont icon-moon"></i>
+                </div>
+                <div class="mdui-list-item-content">夜间模式</div>
+                <label class="mdui-switch" id="darkmode">
+                  <input type="checkbox" id="nightmode_switch"/>
+                  <i class="mdui-switch-icon"></i>
+                </label>
+            </div>           
+        </div>
+    </div>
+
+    
+    <div id="sidebar-tab2" class="mdui-p-a-1">
+        <div class="sidebar-overview">
+            <div class="sidebar-avatar">
+                
+                    <img src="/icons/avatar.gif"/>
+                
+            </div>
+            <div class="sidebar-author-name">一个小鸽子</div>
+            <div class="sidebar-description"></div>
+        </div>
+        <div class="sidebar-links">
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-mail"></i></span>
+                    <a href="/Yigexiaogezi_recovery@Outlook.com" class="mdui-chip-title">E-Mail</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-github"></i></span>
+                    <a target="_blank" rel="noopener" href="https://github.com/YigexiaogeziAwa" class="mdui-chip-title">GitHub</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-bilibili"></i></span>
+                    <a target="_blank" rel="noopener" href="https://space.bilibili.com/1372244620" class="mdui-chip-title">Bilibili</a>
+                </div>
+            
+        </div>
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-link"></i>
+                    </div>
+                    <div class="mdui-list-item-content">友情链接</div>
+                    <div class="mdui-collapse-item-arrow">
+                        <i class="mdui-list-item-icon iconfont icon-angle-down"></i>
+                    </div>
+                </div>
+                <ul id="linksList" class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                    
+                        <a target="_blank" rel="noopener" href="https://s.team/chat/KwJqB6gV" class="mdui-list-item mdui-ripple">
+                            我的AmongUs游戏组
+                        </a>
+                    
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mdui-divider"></div>
+    
+    
+</aside>
+  
+  <main id="main-contain" class="mdui-container mdui-m-t-5">
+    <article id="article" class="mdui-card mdui-p-b-2 mdui-m-b-5">
+  <header class="mdui-card-media">
+    
+    
+      <div class="post-header"> 
+  <a class="post-header-title" href="/2022/06/27/AmongUsGameTips/">太空狼人杀攻略 版本v1.0</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      发布于:&nbsp;2022-06-27
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      更新于:&nbsp;2022-06-27
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      分类于:&nbsp;<a class="category-link" href="/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/">游戏教程</a>
+    </span>
+    
+      <span>
+        <span class="iconfont icon-eye"></span>
+        阅读次数:&nbsp;
+        <span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span>
+      </span>
+    
+  </div>
+</div>   
+    
+
+
+
+    
+    
+    <div class="mdui-card-menu">
+    
+      <button class="mdui-btn mdui-btn-icon mdui-text-color-teal" mdui-menu="{target: '#share_menu', align: 'right'}"><i class="iconfont icon-share"></i></button>
+      <ul class="mdui-menu" id="share_menu">
+        <li class="mdui-menu-item">
+          <a href="http://service.weibo.com/share/share.php?appkey=&title=太空狼人杀攻略 版本v1.0&url=http://yigexiaogeziawa.github.io/2022/06/27/AmongUsGameTips/&pic=http://yigexiaogeziawa.github.io/null&searchPic=false&style=simple" target="_blank" class="mdui-ripple">分享到 Weibo</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://twitter.com/intent/tweet?text=太空狼人杀攻略 版本v1.0&url=http://yigexiaogeziawa.github.io/2022/06/27/AmongUsGameTips/&via=一个小鸽子" target="_blank" class="mdui-ripple">分享到 Twitter</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http://yigexiaogeziawa.github.io/2022/06/27/AmongUsGameTips/" target="_blank" class="mdui-ripple">分享到 Facebook</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://plus.google.com/share?url=http://yigexiaogeziawa.github.io/2022/06/27/AmongUsGameTips/" target="_blank" class="mdui-ripple">分享到 Google+</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://yigexiaogeziawa.github.io/2022/06/27/AmongUsGameTips/&title=太空狼人杀攻略 版本v1.0" target="_blank" class="mdui-ripple">分享到 LinkedIn</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="http://connect.qq.com/widget/shareqq/index.html?site=一个小鸽子的小站&title=太空狼人杀攻略 版本v1.0&summary=&pics=http://yigexiaogeziawa.github.io/null&url=http://yigexiaogeziawa.github.io/2022/06/27/AmongUsGameTips/" target="_blank" class="mdui-ripple">分享到 QQ</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://telegram.me/share/url?url=http://yigexiaogeziawa.github.io/2022/06/27/AmongUsGameTips/&text=太空狼人杀攻略 版本v1.0" target="_blank" class="mdui-ripple">分享到 Telegram</a>
+        </li>
+      </ul>
+    
+  </div>
+  </header>
+  
+  
+  
+  
+  <div class="post-tags">
+    
+      <i class="iconfont icon-tag">
+        <a rel="tag" href = /tags/Among-us/ >Among us</a>
+      </i>
+    
+      <i class="iconfont icon-tag">
+        <a rel="tag" href = /tags/%E6%B8%B8%E6%88%8F/ >游戏</a>
+      </i>
+    
+      <i class="iconfont icon-tag">
+        <a rel="tag" href = /tags/%E6%95%99%E7%A8%8B/ >教程</a>
+      </i>
+    
+  </div>
+
+  
+  <div class="mdui-card-content mdui-typo mdui-p-x-4">
+    <ul>
+<li><a href="#%E4%BB%8B%E7%BB%8D">介绍</a></li>
+<li><a href="#%E6%93%8D%E4%BD%9C">操作</a></li>
+<li><a href="#%E6%B8%B8%E6%88%8F%E7%95%8C%E9%9D%A2">游戏界面</a><ul>
+<li><a href="#%E6%B8%B8%E6%88%8F%E4%B8%BB%E7%95%8C%E9%9D%A2">游戏主界面</a></li>
+<li><a href="#%E6%9C%AC%E5%9C%B0%E6%B8%B8%E6%88%8F">本地游戏</a></li>
+<li><a href="#%E5%A4%9A%E4%BA%BA%E6%B8%B8%E6%88%8F">多人游戏</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B8%B8%E6%88%8F%E5%86%85%E7%95%8C%E9%9D%A2">游戏内界面</a><ul>
+<li><a href="#%E6%99%AE%E9%80%9A">普通</a></li>
+<li><a href="#%E6%8A%95%E7%A5%A8">投票</a></li>
+<li><a href="#%E8%88%B9%E5%91%98%E7%A7%91%E5%AD%A6%E5%AE%B6-%E5%8A%9F%E8%83%BD%E7%AA%97%E5%8F%A3">船员&gt;科学家 功能窗口</a></li>
+<li><a href="#%E4%BC%AA%E8%A3%85%E8%80%85%E5%8F%98%E5%BD%A2%E8%80%85-%E5%8A%9F%E8%83%BD%E7%AA%97%E5%8F%A3">伪装者&gt;变形者 功能窗口</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B8%B8%E6%88%8F%E8%BF%87%E7%A8%8B%E8%83%9C%E5%88%A9%E6%96%B9%E6%B3%95">游戏过程胜利方法</a><ul>
+<li><a href="#%E4%BC%AA%E8%A3%85%E8%80%85%E8%83%9C%E5%88%A9">伪装者胜利</a></li>
+<li><a href="#%E8%88%B9%E5%91%98%E8%83%9C%E5%88%A9">船员胜利</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B8%B8%E6%88%8F%E8%81%8C%E4%B8%9A">游戏职业</a><ul>
+<li><a href="#%E8%88%B9%E5%91%98--%E5%B7%A5%E7%A8%8B%E5%B8%88">船员 &gt; 工程师</a></li>
+<li><a href="#%E8%88%B9%E5%91%98--%E7%A7%91%E5%AD%A6%E5%AE%B6">船员 &gt; 科学家</a></li>
+<li><a href="#%E5%B7%B2%E6%AD%BB%E8%88%B9%E5%91%98--%E5%AE%88%E6%8A%A4%E5%A4%A9%E4%BD%BF">已死船员 &gt; 守护天使</a></li>
+<li><a href="#%E4%BC%AA%E8%A3%85%E8%80%85--%E5%8F%98%E5%BD%A2%E8%80%85">伪装者 &gt; 变形者</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B8%B8%E6%88%8F%E6%8A%80%E5%B7%A7">游戏技巧</a><ul>
+<li><a href="#%E8%88%B9%E5%91%98--%E5%B7%A5%E7%A8%8B%E5%B8%88-1">船员 &gt; 工程师</a></li>
+<li><a href="#%E4%BC%AA%E8%A3%85%E8%80%85">伪装者</a><ul>
+<li><a href="#%E5%8F%A0%E5%88%80">叠刀</a></li>
+<li><a href="#%E5%A5%BD%E4%BA%8B%E5%81%9A%E5%B0%BD%E5%9D%8F%E4%BA%8B%E5%81%9A%E7%BB%9D">好事做尽，坏事做绝</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E6%B8%B8%E7%8E%A9%E6%97%B6%E6%B3%A8%E6%84%8F">游玩时注意</a><ul>
+<li><a href="#%E4%BC%AA%E8%A3%85%E8%80%85-1">伪装者</a></li>
+<li><a href="#%E8%88%B9%E5%91%98">船员</a></li>
+<li><a href="#%E6%96%87%E6%98%8E%E5%B1%82%E9%9D%A2">文明层面</a></li>
+</ul>
+</li>
+<li><a href="#%E6%94%BB%E7%95%A5%E8%BF%98%E5%9C%A8%E6%9B%B4%E6%96%B0%E8%AF%B7%E5%85%B3%E6%B3%A8%E4%B8%80%E4%B8%AA%E5%B0%8F%E9%B8%BD%E5%AD%90%E7%9A%84%E5%B0%8F%E7%AA%9D">攻略还在更新，请关注一个小鸽子的小窝！</a></li>
+</ul>
+<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>Among Us (在我们之中，又叫太空狼人杀)，是由InnerSloth开发的策略游戏。游戏分为两种阵营：伪装者、船员。在这两种职业中也有不同的职业。</p>
+<p>船员做的事是完成任务的同时逐渐排查出 <strong>伪装者</strong> 并获取胜利</p>
+<p>伪装者做的事是把所有 <strong>船员</strong> 都杀死(<em>杀的只剩一个游戏会自动判断伪装者胜利</em>)，也可以结合 <strong>破坏</strong> 功能来破坏一些飞船中必要的系统设施 (<em>可以修复</em>)，导致胜利。</p>
+<h1 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h1><p>鼠标和键盘模式下，按 <strong>W、A、S、D</strong> 或者 <strong>方向键</strong> 以移动，伪装者可按 <strong>Q</strong> 键现场击杀船员，成员可按R以报告船员伤亡。</p>
+<p>完全鼠标模式下，在空白区域按住鼠标，角色会向鼠标相对于游戏界面中心的方向移动。</p>
+<p>单击鼠标可按下右下角的功能按钮并使用，当然也可以按下 <strong>空格键</strong> 来使用右下角的第一功能</p>
+<h1 id="游戏界面"><a href="#游戏界面" class="headerlink" title="游戏界面"></a>游戏界面</h1><h2 id="游戏主界面"><a href="#游戏主界面" class="headerlink" title="游戏主界面"></a>游戏主界面</h2><p><img src="/AmongUsGameTips/%E4%B8%BB%E7%95%8C%E9%9D%A2%E8%AE%B2%E8%A7%A3.png"></p>
+<ol>
+<li><p>账号，</p>
+<p>打开会显示你的 <strong>账号名称</strong> 和 <strong>好友编号</strong> 和 <strong>账号编码</strong> 和 <strong>虚拟的身体信息</strong></p>
+<p>同时也能在这里 <strong>管理账号</strong> 和 <strong>修改名字</strong> 。</p>
+</li>
+<li><p>好友名单，</p>
+<p>(<em>在主界面</em>) 显示出 <strong>最近一起游玩的玩家</strong> 的信息 和 <strong>好友名单</strong> 和 <strong>被封锁的玩家</strong>(<em>说白了就是被你屏蔽的</em>)。</p>
+<p>(<em>在多人房间中</em>) 在 <strong>主界面的</strong> 基础上 又显示了本房间内的玩家信息。</p>
+</li>
+<li><p>退出，退出游戏</p>
+</li>
+<li><p>本地游戏，创建在 <strong>局域网</strong> 中的游戏。</p>
+</li>
+<li><p>在线游戏，进入会 显示 <strong>两种游玩方式</strong> 和 一种 <strong>创建房间</strong> 的方式</p>
+</li>
+<li><p>玩法说明，点进去是游戏最基本的游玩教程</p>
+</li>
+<li><p>自由模式，在这模式中，你可以操作任何东西（<em>任务是否完成、你是什么职业、你是什么阵营</em>），适合新手适应操作。</p>
+</li>
+<li><p>公告，官方在更新后或者有什么改动都会在这里显示</p>
+</li>
+<li><p>游戏设置</p>
+</li>
+<li><p>制作者名单</p>
+</li>
+<li><p>你的游戏数据</p>
+</li>
+<li><p>购买人物装饰的地方</p>
+</li>
+<li><p>人物装饰</p>
+</li>
+<li><p>游戏版本号</p>
+</li>
+</ol>
+<h2 id="本地游戏"><a href="#本地游戏" class="headerlink" title="本地游戏"></a>本地游戏</h2><p><img src="/AmongUsGameTips/%E6%9C%AC%E5%9C%B0%E6%B8%B8%E6%88%8F%E8%AE%B2%E8%A7%A3.png"></p>
+<p>(<em>如图所示</em>)</p>
+<h2 id="多人游戏"><a href="#多人游戏" class="headerlink" title="多人游戏"></a>多人游戏</h2><p><img src="/AmongUsGameTips/%E5%A4%9A%E4%BA%BA%E6%B8%B8%E6%88%8F%E8%AE%B2%E8%A7%A3.png"></p>
+<ol>
+<li><p>主持，自己创建一个房间在官方服务器中。</p>
+</li>
+<li><p>公开，从官方服务器中寻找其他玩家的房间(<em>私有房间除外</em>)</p>
+</li>
+<li><p>私人，一半就是你的朋友给你的房间码，进去输入并选择正确的聊天选项就可以进入（<em>当然也可以使用公开房间的房间码</em>）</p>
+</li>
+<li><p>一个地球Logo，选择服务器所在地。</p>
+</li>
+</ol>
+<h1 id="游戏内界面"><a href="#游戏内界面" class="headerlink" title="游戏内界面"></a>游戏内界面</h1><h2 id="普通"><a href="#普通" class="headerlink" title="普通"></a>普通</h2><p><img src="/AmongUsGameTips/%E6%B8%B8%E6%88%8F%E5%86%85%E7%95%8C%E9%9D%A2.png"></p>
+<ol>
+<li><p>任务栏（<em>伪装者可以破坏通讯系统，导致显示不出任务</em>）</p>
+</li>
+<li><p>任务条（<em>房主可以选择 <strong>会议后</strong> <strong>实时</strong> 选项来导致任务条在什么情况下更新</em>）</p>
+</li>
+<li><p>游戏设置</p>
+</li>
+<li><p>地图（<em>可以显示任务所在地</em>）</p>
+</li>
+<li><p>你在什么地方</p>
+</li>
+<li><p>功能栏</p>
+</li>
+</ol>
+<h2 id="投票"><a href="#投票" class="headerlink" title="投票"></a>投票</h2><p><img src="/AmongUsGameTips/%E6%8A%95%E7%A5%A8.png"></p>
+<ol>
+<li><p>游戏设置</p>
+</li>
+<li><p>游戏地图</p>
+</li>
+<li><p>任务条（<em>房主可以选择 <strong>会议后</strong> <strong>实时</strong> 选项来导致任务条在什么情况下更新</em>）</p>
+</li>
+<li><p>跳过投票按钮</p>
+</li>
+<li><p>投票时间显示</p>
+</li>
+<li><p>死的船员&#x2F;还活着的船员列表 (<em>随意点击一个船员，弹出 <strong>[✔&#x2F;❌]</strong> 窗口后选择 <strong>[✔]</strong> 就是投票</em>)</p>
+</li>
+<li><p>消息框 (<em>玩家会在里面说话</em>)</p>
+</li>
+</ol>
+<h2 id="船员-gt-科学家-功能窗口"><a href="#船员-gt-科学家-功能窗口" class="headerlink" title="船员&gt;科学家 功能窗口"></a>船员&gt;科学家 功能窗口</h2><p><img src="/AmongUsGameTips/%E8%88%B9%E5%91%98%E7%A7%91%E5%AD%A6%E5%AE%B6%E5%8A%9F%E8%83%BD%E8%AE%B2%E8%A7%A3.png"></p>
+<ol>
+<li><p>船员头像</p>
+</li>
+<li><p>船员状态 ( <strong><em>DED</em></strong> 为死亡 <strong><em>D&#x2F;C</em></strong> 玩家退出了&#x2F;尸体已经被报告&#x2F;死了很久)</p>
+</li>
+<li><p>当前船员心电图</p>
+</li>
+<li><p>机器的电（<em>为 <strong>0</strong> 就不能使用了</em>）</p>
+</li>
+<li><p>关闭</p>
+</li>
+</ol>
+<h2 id="伪装者-gt-变形者-功能窗口"><a href="#伪装者-gt-变形者-功能窗口" class="headerlink" title="伪装者&gt;变形者 功能窗口"></a>伪装者&gt;变形者 功能窗口</h2><p><img src="/AmongUsGameTips/%E4%BC%AA%E8%A3%85%E8%80%85%E5%8F%98%E5%BD%A2%E7%AA%97%E5%8F%A3.png"></p>
+<ol>
+<li>可变形的船员（<em>点击即可</em>）</li>
+</ol>
+<h1 id="游戏过程胜利方法"><a href="#游戏过程胜利方法" class="headerlink" title="游戏过程胜利方法"></a>游戏过程胜利方法</h1><h2 id="伪装者胜利"><a href="#伪装者胜利" class="headerlink" title="伪装者胜利"></a>伪装者胜利</h2><p><strong>伪装者</strong> 把 <strong>船员</strong> 都杀掉 即可胜利</p>
+<p><strong>伪装者</strong> 破坏了 <strong><em>O2</em></strong> 或 <strong><em>核反应堆</em></strong> ，而船员没有及时修复 即可胜利</p>
+<p>(<em>多人</em>) <strong>船员</strong> 都退出了房间 即可胜利</p>
+<h2 id="船员胜利"><a href="#船员胜利" class="headerlink" title="船员胜利"></a>船员胜利</h2><p>被 <strong>伪装者</strong> 都杀掉之前 做完 <strong>所有任务</strong> 胜利 (<em>死掉的船员依旧需要做任务</em>)</p>
+<p>被 <strong>伪装者</strong> 都杀掉之前 排查出 <strong>所有伪装者</strong> 并通过投票 <strong>扔出</strong> 即可胜利</p>
+<p>(<em>多人</em>) <strong>伪装者</strong> 都退出了房间 即可胜利</p>
+<h1 id="游戏职业"><a href="#游戏职业" class="headerlink" title="游戏职业"></a>游戏职业</h1><h2 id="船员-gt-工程师"><a href="#船员-gt-工程师" class="headerlink" title="船员 &gt; 工程师"></a>船员 &gt; 工程师</h2><p>工程师可以使用管道，但是呆在管道里一定时间会强制让你出来，该功能拥有冷却系统。</p>
+<p>(<em>通讯系统如果被伪装者破坏了，就不能使用了</em>)</p>
+<h2 id="船员-gt-科学家"><a href="#船员-gt-科学家" class="headerlink" title="船员 &gt; 科学家"></a>船员 &gt; 科学家</h2><p>科学家可以使用平板查看每个船员的生死情况，使用一段时间会自动关闭，该功能拥有冷却系统。</p>
+<p>(<em>通讯系统如果被伪装者破坏了，就不能使用了</em>)</p>
+<h2 id="已死船员-gt-守护天使"><a href="#已死船员-gt-守护天使" class="headerlink" title="已死船员 &gt; 守护天使"></a>已死船员 &gt; 守护天使</h2><p>如果你在知道谁是伪装者的情况下，你可以跟随他，并猜测他的下刀时机，然后按 <em>保护</em> 按钮对船员进行保护，让船员抵挡伪装者的致命一刀，该功能拥有冷却系统。</p>
+<p>(<em>也可以提前保护，会有一段保护时间，就怕伪装者他并不下刀，就白用了</em>)</p>
+<p>(<em>通讯系统如果被伪装者破坏了，就不能使用了</em>)</p>
+<h2 id="伪装者-gt-变形者"><a href="#伪装者-gt-变形者" class="headerlink" title="伪装者 &gt; 变形者"></a>伪装者 &gt; 变形者</h2><p>你可以伪装成任何一个船员，然后当着他们的面对一个人进行下刀，不仅杀死了一个人，还把伪装者这个身份栽赃给了被变形的人，该功能拥有冷却系统。</p>
+<h1 id="游戏技巧"><a href="#游戏技巧" class="headerlink" title="游戏技巧"></a>游戏技巧</h1><h2 id="船员-gt-工程师-1"><a href="#船员-gt-工程师-1" class="headerlink" title="船员 &gt; 工程师"></a>船员 &gt; 工程师</h2><p>你可以呆在管道里进行踩点，要是发现伪装者对船员下刀，你就可以知道伪装者是谁了 (<em>前提不是变形</em>)</p>
+<h2 id="伪装者"><a href="#伪装者" class="headerlink" title="伪装者"></a>伪装者</h2><h3 id="叠刀"><a href="#叠刀" class="headerlink" title="叠刀"></a>叠刀</h3><p>如果你和你的队友在一起，而且你面前有和 <strong>你队友人数一样</strong> 的 __船员__，你可以和你的队友一起把船员都杀了，然后跳管道逃走。</p>
+<h3 id="好事做尽，坏事做绝"><a href="#好事做尽，坏事做绝" class="headerlink" title="好事做尽，坏事做绝"></a>好事做尽，坏事做绝</h3><p>当局势非常胶着的情况下，其他 <strong>伪装者</strong> 被票出，只剩你一个，而且现在总人数(算上你)只有4个了，此时你可以:</p>
+<p>在他们三面前刀掉一个人，并且自己报告，然后说其中有个人是和我们(<em>伪装者阵营</em>)一起的 (<em>前提他并没有让大家都能相信是船员的任务</em>)</p>
+<p>然后好人大概率会把那个好人投出去</p>
+<p>就只剩两个人，游戏直接判断 <strong>伪装者</strong> 胜利</p>
+<h1 id="游玩时注意"><a href="#游玩时注意" class="headerlink" title="游玩时注意"></a>游玩时注意</h1><h2 id="伪装者-1"><a href="#伪装者-1" class="headerlink" title="伪装者"></a>伪装者</h2><p>千万不要在被监控的范围下对船员下刀，这样会被在保安室的船员看到 (<em>除非你处于变形状态</em>)</p>
+<h2 id="船员"><a href="#船员" class="headerlink" title="船员"></a>船员</h2><p>如果你已经知道伪装者是谁并不要不说，这样会影响游戏的输赢。</p>
+<h2 id="文明层面"><a href="#文明层面" class="headerlink" title="文明层面"></a>文明层面</h2><p>不要在游戏时中途退出，不要在游戏开始时公布身份时并不是你想要的就退出。 (<em>也不要挂机</em>)</p>
+<p>游戏永远都是友谊第一，不要把快乐的游戏变成气人的游戏。</p>
+<p>为队友着想，不要因为伪装者当不下去了，直接自爆自己和队友的身份。</p>
+<p>骂人不能太过，任物都有度。</p>
+<h1 id="攻略还在更新，请关注一个小鸽子的小窝！"><a href="#攻略还在更新，请关注一个小鸽子的小窝！" class="headerlink" title="攻略还在更新，请关注一个小鸽子的小窝！"></a>攻略还在更新，请关注一个小鸽子的小窝！</h1>
+  </div>
+  <!--文末结束语-->
+  
+    <div style="text-align:center;color: #ccc;font-size:24px;"> --- 本文结束 <i class="iconfont icon-heartbeat" style="font-size:24px;"></i> The End --- </div>
+  
+  <!--页脚广告-->
+  
+  <div class="mdui-divider"></div>
+  
+  <nav>
+    
+    
+      <a rel="next" class="post-nav-item mdui-float-right" href="/2022/06/26/AmongsUsModMgrTools/">
+        <span>太空狼人杀模组管理工具</span>
+        <i class="iconfont icon-angle-right"></i>
+      </a>
+    
+  </nav>
+</article>
+
+
+
+
+  <div class="toc-button"  style="z-index: 100;">
+    <button class="mdui-fab mdui-ripple mdui-color-teal" mdui-menu="{target: '#toc'}"><i class="iconfont icon-list"></i></button>
+    <ul class="mdui-menu" id="toc">
+      <li class="mdui-menu-item">
+        <a href="/2022/06/27/AmongUsGameTips/" id="toc-header" class="mdui-ripple">文章目录</a>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C"><span class="toc-number">2.</span> <span class="toc-text">操作</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B8%B8%E6%88%8F%E7%95%8C%E9%9D%A2"><span class="toc-number">3.</span> <span class="toc-text">游戏界面</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B8%B8%E6%88%8F%E4%B8%BB%E7%95%8C%E9%9D%A2"><span class="toc-number">3.1.</span> <span class="toc-text">游戏主界面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E6%B8%B8%E6%88%8F"><span class="toc-number">3.2.</span> <span class="toc-text">本地游戏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E4%BA%BA%E6%B8%B8%E6%88%8F"><span class="toc-number">3.3.</span> <span class="toc-text">多人游戏</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B8%B8%E6%88%8F%E5%86%85%E7%95%8C%E9%9D%A2"><span class="toc-number">4.</span> <span class="toc-text">游戏内界面</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%99%AE%E9%80%9A"><span class="toc-number">4.1.</span> <span class="toc-text">普通</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%95%E7%A5%A8"><span class="toc-number">4.2.</span> <span class="toc-text">投票</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%88%B9%E5%91%98-gt-%E7%A7%91%E5%AD%A6%E5%AE%B6-%E5%8A%9F%E8%83%BD%E7%AA%97%E5%8F%A3"><span class="toc-number">4.3.</span> <span class="toc-text">船员&gt;科学家 功能窗口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%AA%E8%A3%85%E8%80%85-gt-%E5%8F%98%E5%BD%A2%E8%80%85-%E5%8A%9F%E8%83%BD%E7%AA%97%E5%8F%A3"><span class="toc-number">4.4.</span> <span class="toc-text">伪装者&gt;变形者 功能窗口</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B8%B8%E6%88%8F%E8%BF%87%E7%A8%8B%E8%83%9C%E5%88%A9%E6%96%B9%E6%B3%95"><span class="toc-number">5.</span> <span class="toc-text">游戏过程胜利方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%AA%E8%A3%85%E8%80%85%E8%83%9C%E5%88%A9"><span class="toc-number">5.1.</span> <span class="toc-text">伪装者胜利</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%88%B9%E5%91%98%E8%83%9C%E5%88%A9"><span class="toc-number">5.2.</span> <span class="toc-text">船员胜利</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B8%B8%E6%88%8F%E8%81%8C%E4%B8%9A"><span class="toc-number">6.</span> <span class="toc-text">游戏职业</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%88%B9%E5%91%98-gt-%E5%B7%A5%E7%A8%8B%E5%B8%88"><span class="toc-number">6.1.</span> <span class="toc-text">船员 &gt; 工程师</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%88%B9%E5%91%98-gt-%E7%A7%91%E5%AD%A6%E5%AE%B6"><span class="toc-number">6.2.</span> <span class="toc-text">船员 &gt; 科学家</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B7%B2%E6%AD%BB%E8%88%B9%E5%91%98-gt-%E5%AE%88%E6%8A%A4%E5%A4%A9%E4%BD%BF"><span class="toc-number">6.3.</span> <span class="toc-text">已死船员 &gt; 守护天使</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%AA%E8%A3%85%E8%80%85-gt-%E5%8F%98%E5%BD%A2%E8%80%85"><span class="toc-number">6.4.</span> <span class="toc-text">伪装者 &gt; 变形者</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B8%B8%E6%88%8F%E6%8A%80%E5%B7%A7"><span class="toc-number">7.</span> <span class="toc-text">游戏技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%88%B9%E5%91%98-gt-%E5%B7%A5%E7%A8%8B%E5%B8%88-1"><span class="toc-number">7.1.</span> <span class="toc-text">船员 &gt; 工程师</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%AA%E8%A3%85%E8%80%85"><span class="toc-number">7.2.</span> <span class="toc-text">伪装者</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%A0%E5%88%80"><span class="toc-number">7.2.1.</span> <span class="toc-text">叠刀</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A5%BD%E4%BA%8B%E5%81%9A%E5%B0%BD%EF%BC%8C%E5%9D%8F%E4%BA%8B%E5%81%9A%E7%BB%9D"><span class="toc-number">7.2.2.</span> <span class="toc-text">好事做尽，坏事做绝</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B8%B8%E7%8E%A9%E6%97%B6%E6%B3%A8%E6%84%8F"><span class="toc-number">8.</span> <span class="toc-text">游玩时注意</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%AA%E8%A3%85%E8%80%85-1"><span class="toc-number">8.1.</span> <span class="toc-text">伪装者</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%88%B9%E5%91%98"><span class="toc-number">8.2.</span> <span class="toc-text">船员</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E6%98%8E%E5%B1%82%E9%9D%A2"><span class="toc-number">8.3.</span> <span class="toc-text">文明层面</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%94%BB%E7%95%A5%E8%BF%98%E5%9C%A8%E6%9B%B4%E6%96%B0%EF%BC%8C%E8%AF%B7%E5%85%B3%E6%B3%A8%E4%B8%80%E4%B8%AA%E5%B0%8F%E9%B8%BD%E5%AD%90%E7%9A%84%E5%B0%8F%E7%AA%9D%EF%BC%81"><span class="toc-number">9.</span> <span class="toc-text">攻略还在更新，请关注一个小鸽子的小窝！</span></a></li></ol>
+      </li>
+    </ul>
+  </div>
+
+
+
+    <div id="comment" class="mdui-card mdui-p-a-2 mdui-m-b-5">
+      <div class="mdui-tab" mdui-tab>
+        
+          <a href="#comment-tab0" class="mdui-ripple">gitalk</a>
+        
+      </div>
+      
+        <div id="comment-tab0" class="mdui-p-a-2">
+          <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: 'fb843a8b9f0dc44a4def',
+    clientSecret: 'be2f58b397381fcb8394bb86302c71c871ae96a0',
+    repo: 'yigexiaogeziblog-gitalk',
+    owner: 'YigexiaogeziAwa',
+    admin: ['YigexiaogeziAwa'],
+    id:  md5(location.pathname) ,
+    distractionFreeMode: 'true',
+  });
+  gitalk.render('gitalk-container');
+</script>
+        </div>
+      
+    </div>
+
+  </main>
+  <footer id="footer" class="mdui-text-center mdui-m-t-5 mdui-p-b-2 mdui-p-t-4 mdui-color-theme">
+  <div class="mdui-container">
+    <div class="mdui-row">
+      
+        <a href="https://beian.miit.gov.cn" rel="noopener" target="_blank"></a>
+      
+      <span>
+        &copy; 2022 - 2022 
+        
+          <span style="color:#d9333f" class="iconfont icon-heart"></span>
+        
+        一个小鸽子
+      </span>
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span>Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span>Theme: <a href="https://github.com/kb1000fx/Meadow" rel="noopener" target="_blank">Meadow</a></span>
+        </div>
+      
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span id="busuanzi_container_site_uv" style="display: none;"> <span class="iconfont icon-user"></span>总访客量 <span id="busuanzi_value_site_uv"></span></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span id="busuanzi_container_site_pv" style="display: none;"> <span class="iconfont icon-eye"></span>总访问量 <span id="busuanzi_value_site_pv"></span></span>
+        </div>
+      
+    </div>
+ </div>
+</footer>
+  
+  <button id="gotop" class="mdui-fab mdui-fab-fixed mdui-fab-hide mdui-ripple mdui-color-teal" style="z-index:100;"><i class="iconfont icon-arrowup"></i></button>
+  
+  
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({
+        startOnLoad: true,
+        theme: "default"
+    });</script>
+
+
+
+
+    
+<script src="/js/mdui.min.v1.0.0.js"></script>
+
+
+
+
+<script src="/js/meadow.js"></script>
+
+</body>
+</html >
