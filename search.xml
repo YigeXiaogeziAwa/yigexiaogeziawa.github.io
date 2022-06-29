@@ -284,4 +284,33 @@
         <tag>Batch</tag>
       </tags>
   </entry>
+  <entry>
+    <title>鸽式Unturned汉化 翻译日志 2022/6/29</title>
+    <url>/2022/06/29/PtuTranLog2022629/</url>
+    <content><![CDATA[<h1 id="现翻译文件的改动"><a href="#现翻译文件的改动" class="headerlink" title="现翻译文件的改动"></a>现翻译文件的改动</h1><h2 id="Translations-x2F-Schinese-translation"><a href="#Translations-x2F-Schinese-translation" class="headerlink" title="Translations&#x2F;Schinese.translation"></a>Translations&#x2F;Schinese.translation</h2><p><strong>“Heightmap”&gt;”Brush”&gt;”Falloff”</strong>  ：<strong>减弱</strong> 改成了更加通顺的 <strong>衰落</strong> 一词。</p>
+<p><strong>“Heightmap”&gt;”Brush”&gt;”Strength”</strong> ：<strong>增强</strong> 改成了 <strong>强度</strong> 一词。</p>
+<p><strong>“Splatmap”&gt;”Brush”&gt;”Falloff”</strong>  ：<strong>减弱</strong> 改成了更加通顺的 <strong>衰落</strong> 一词。</p>
+<p><strong>“Splatmap”&gt;”Brush”&gt;”Strength”</strong> ：<strong>增强</strong> 改成了 <strong>强度</strong> 一词。</p>
+<p><strong>“Foliage_Tool”&gt;”Brush”&gt;”Falloff”</strong> ：<strong>减弱</strong> 改成了更加通顺的 <strong>衰落</strong> 一词。</p>
+<p><strong>“Foliage_Tool”&gt;”Brush”&gt;”Strength”</strong> ：<strong>增强</strong> 改成了 <strong>强度</strong> 一词。</p>
+<p><strong>“Heightmap_Brush_Falloff”</strong> ：<strong>减弱</strong> 改成了更加通顺的 <strong>衰落</strong> 一词。</p>
+<p><strong>“Heightmap_Brush_Strength”</strong> ：<strong>增强</strong> 改成了 <strong>强度</strong> 一词。</p>
+<p><strong>“Splatmap_Brush_Falloff”</strong> ：<strong>减弱</strong> 改成了更加通顺的 <strong>衰落</strong> 一词。</p>
+<p><strong>“Splatmap_Brush_Strength”</strong> ：<strong>增强</strong> 改成了 <strong>强度</strong> 一词。</p>
+<p><strong>“Foliage_Instanced_Meshes”</strong> ：使用回英文。</p>
+<p><strong>“Effect_Volumes”</strong> ：翻译成 “效果范围”。</p>
+<p><strong>“Deadzone_Volumes”</strong> ：<strong>辐射区区域</strong> 改成了 <strong>辐射区范围</strong> 一词。</p>
+<h1 id="新翻译"><a href="#新翻译" class="headerlink" title="新翻译"></a>新翻译</h1><p>Localization&#x2F;Schinese&#x2F;Menu&#x2F;Configuration&#x2F;MenuConfiguration.dat</p>
+<p>Localization&#x2F;Schinese&#x2F;Menu&#x2F;Configuration&#x2F;MenuConfigurationControls.dat</p>
+<p>Localization&#x2F;Schinese&#x2F;Menu&#x2F;Configuration&#x2F;MenuConfigurationDisplay.dat</p>
+]]></content>
+      <categories>
+        <category>Unturned</category>
+        <category>翻译日志</category>
+      </categories>
+      <tags>
+        <tag>游戏</tag>
+        <tag>日志</tag>
+      </tags>
+  </entry>
 </search>
